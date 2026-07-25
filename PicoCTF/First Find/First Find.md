@@ -1,25 +1,19 @@
-# First Find
+# 🗂️ First Find
 
 **Platform:** PicoCTF
-
 **Category:** General Skills
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ## Challenge Description
-
 Locate the hidden file inside the extracted archive.
 
 ## Solution
-
-Extract the archive.
-
+Extract the archive:
 ```bash
 unzip filename.zip
 ```
 
-Search for the hidden file.
-
+Search recursively for the hidden file:
 ```bash
 find . -name "uber-secret.txt"
 ```
@@ -27,13 +21,11 @@ find . -name "uber-secret.txt"
 Open the file to obtain the flag.
 
 ## Skills Learned
-
 - unzip
 - find
 - Linux Filesystem
 
 ## Flag
-
 ```text
-Hidden
+picoCTF{hidden}
 ```

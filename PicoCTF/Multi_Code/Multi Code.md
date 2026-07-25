@@ -1,28 +1,23 @@
-# Multi Code
+# 🔐 Multi Code
 
 **Platform:** PicoCTF
-
 **Category:** General Skills
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ## Challenge Description
-
 Decode multiple encoding layers to recover the flag.
 
 ## Solution
+The message was layered through four transformations, decoded in this order:
 
-Decode the message in the following order:
+1. **Base64** decode
+2. **Hex** decode
+3. **ROT13** decode
+4. **URL** decode
 
-1. Base64
-2. Hex
-3. ROT13
-4. URL Decode
-
-CyberChef can perform all steps.
+[CyberChef](https://gchq.github.io/CyberChef/) can perform the entire chain in a single recipe — stack the operations in the order above and bake.
 
 ## Skills Learned
-
 - Base64
 - Hex
 - ROT13
@@ -30,7 +25,6 @@ CyberChef can perform all steps.
 - CyberChef
 
 ## Flag
-
 ```text
-Hidden
+picoCTF{hidden}
 ```
