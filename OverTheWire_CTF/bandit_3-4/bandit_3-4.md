@@ -1,14 +1,8 @@
-# Bandit Level 3 → 4
+# 🕵️ Bandit Level 3 → 4
 
 **Platform:** OverTheWire
-
-**Wargame:** Bandit
-
-**Level:** 3 → 4
-
 **Category:** Linux Enumeration
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ---
 
@@ -18,94 +12,55 @@ The password for the next level is stored in a hidden file located inside the `i
 
 ---
 
-## Initial Enumeration
+## Approach
 
-After connecting to the remote machine via SSH, I listed the contents of the current directory.
+`ls` alone doesn't reveal dotfiles (hidden files), so a more thorough enumeration tool is needed. `find` lists every entry in a directory tree regardless of whether it's hidden, making it ideal for this kind of discovery.
+
+---
+
+## Solution
+
+1. List the contents of the current directory:
 
 ```bash
 ls
 ```
 
-Output:
-
 ```text
 inhere
 ```
 
-To enumerate all files, including hidden ones, I used:
+2. Enumerate all files, including hidden ones:
 
 ```bash
 find .
 ```
-
-Output (relevant):
 
 ```text
 ./inhere
 ./inhere/...Hiding-From-You
 ```
 
-The output revealed a hidden file named `...Hiding-From-You`.
-
----
-
-## Solution
-
-Navigate to the target directory.
+3. Navigate into the directory and read the hidden file:
 
 ```bash
 cd inhere
-```
-
-Display the contents of the hidden file.
-
-```bash
 cat "...Hiding-From-You"
 ```
 
-The output contains the password for the next Bandit level.
-
----
-
-## Commands Used
-
-```bash
-ssh bandit3@bandit.labs.overthewire.org -p 2220
-
-ls
-
-find .
-
-cd inhere
-
-cat "...Hiding-From-You"
-```
-
----
-
-## Why These Commands?
-
-| Command | Purpose |
-|---------|---------|
-| `ssh` | Connect to the Bandit server |
-| `ls` | List files in the current directory |
-| `find .` | Enumerate files, including hidden entries |
-| `cd` | Change into the target directory |
-| `cat` | Read the hidden file |
+The output contains the password for the next level.
 
 ---
 
 ## Skills Learned
 
-- Linux Enumeration
-- Hidden Files
-- File Discovery using `find`
-- Directory Navigation
-- Reading Files
+- Discovering hidden files with `find`
+- Directory navigation
+- Reading files with unusual names
 
 ---
 
-## Tools Used
+## Tools
 
 - SSH
 - Linux Terminal

@@ -1,14 +1,8 @@
-# Bandit Level 4 → 5
+# 📄 Bandit Level 4 → 5
 
 **Platform:** OverTheWire
-
-**Wargame:** Bandit
-
-**Level:** 4 → 5
-
 **Category:** Linux File Inspection
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ---
 
@@ -18,119 +12,51 @@ The password for the next level is stored in the **only human-readable file** in
 
 ---
 
-## Initial Enumeration
+## Approach
 
-After connecting to the Bandit server, I enumerated the current directory.
-
-```bash
-find .
-```
-
-Output (relevant):
-
-```text
-./inhere
-./inhere/-file00
-./inhere/-file01
-./inhere/-file02
-./inhere/-file03
-./inhere/-file04
-./inhere/-file05
-./inhere/-file06
-./inhere/-file07
-./inhere/-file08
-./inhere/-file09
-```
-
-The `inhere` directory contains multiple files with similar names.
-
----
-
-## Investigation
-
-I attempted to inspect the files using `cat`.
-
-```bash
-cat inhere/-file00
-cat inhere/-file01
-cat inhere/-file03
-cat inhere/-file06
-cat inhere/-file08
-cat inhere/-file09
-```
-
-Most files displayed unreadable binary data.
-
-When reading `-file07`, the output was human-readable text containing the password for the next level.
-
-```bash
-cat inhere/-file07
-```
+The `inhere` directory contains multiple similarly-named files, most of which hold binary/garbage data. Rather than eyeballing every file with `cat`, the `file` command can classify each one by content type in a single pass.
 
 ---
 
 ## Solution
 
-Read the human-readable file.
+1. Enumerate the directory:
 
 ```bash
-cat inhere/-file07
+find .
 ```
 
-The output contains the password for **Bandit Level 5**.
+```text
+./inhere/-file00
+./inhere/-file01
+...
+./inhere/-file09
+```
 
-> **Note:** A more efficient approach is to identify the readable file using the `file` command:
+2. Identify which file contains ASCII text without opening every file manually:
 
 ```bash
 file inhere/*
 ```
 
-This command identifies which file contains ASCII text without manually opening every file.
-
----
-
-## Commands Used
+3. Read the human-readable file:
 
 ```bash
-find .
-
-cat inhere/-file00
-
-cat inhere/-file01
-
-cat inhere/-file03
-
-cat inhere/-file06
-
 cat inhere/-file07
-
-cat inhere/-file08
-
-cat inhere/-file09
 ```
 
----
-
-## Why These Commands?
-
-| Command | Purpose |
-|---------|---------|
-| `find .` | Enumerate the directory structure |
-| `cat` | Inspect file contents |
-| `file` *(alternative)* | Determine file types and identify the readable file |
+The output contains the password for the next level.
 
 ---
 
 ## Skills Learned
 
-- Linux Enumeration
-- Inspecting File Contents
-- Distinguishing Text Files from Binary Files
-- Using `file` to identify file types
+- Distinguishing text files from binary files
+- Using `file` to identify file types efficiently
 
 ---
 
-## Tools Used
+## Tools
 
 - SSH
 - Linux Terminal

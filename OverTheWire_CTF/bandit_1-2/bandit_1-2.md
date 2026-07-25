@@ -1,81 +1,53 @@
-# Bandit Level 1 → 2
+# ➖ Bandit Level 1 → 2
 
 **Platform:** OverTheWire
-
-**Wargame:** Bandit
-
-**Level:** 1 → 2
-
 **Category:** Linux File Handling
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## Challenge Description
 
-Retrieve the password stored inside a file named `-`.
+Retrieve the password stored inside a file literally named `-`.
 
 ---
 
-## Initial Enumeration
+## Approach
 
-List the files in the current directory.
-
-```bash
-ls
-```
-
-Output:
-
-```text
--
-```
-
-The filename begins with a dash, which is normally interpreted as a command option.
+A filename of `-` is normally interpreted by command-line tools as a flag or as "read from stdin," not as a real filename. The fix is to force the shell to treat it as a path rather than an option.
 
 ---
 
 ## Solution
 
-Specify the file using a relative path.
-
-```bash
-cat ./-
-```
-
-The password is displayed.
-
----
-
-## Commands Used
+1. List the files in the current directory:
 
 ```bash
 ls
+```
 
+```text
+-
+```
+
+2. Read the file using a relative path so it isn't mistaken for a flag:
+
+```bash
 cat ./-
 ```
 
----
-
-## Why These Commands?
-
-| Command | Purpose |
-|---------|---------|
-| `ls` | Identify available files |
-| `cat ./-` | Read a filename beginning with `-` |
+The password is displayed in the output.
 
 ---
 
 ## Skills Learned
 
-- Handling Special Filenames
-- Relative Paths
-- Linux File Reading
+- Handling special/edge-case filenames
+- Using relative paths (`./`) to disambiguate arguments
 
 ---
 
-## Tools Used
+## Tools
 
 - Linux Terminal
 

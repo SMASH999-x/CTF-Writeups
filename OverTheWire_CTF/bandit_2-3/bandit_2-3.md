@@ -1,14 +1,8 @@
-# Bandit Level 2 → 3
+# 🔤 Bandit Level 2 → 3
 
 **Platform:** OverTheWire
-
-**Wargame:** Bandit
-
-**Level:** 2 → 3
-
 **Category:** Linux File Handling
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ---
 
@@ -18,27 +12,25 @@ Retrieve the password stored inside a file whose name contains spaces.
 
 ---
 
-## Initial Enumeration
+## Approach
 
-List the available files.
-
-```bash
-ls
-```
-
-Output:
-
-```text
-spaces in this filename
-```
-
-The filename contains spaces, so it cannot be referenced normally.
+Spaces in filenames break the shell's normal word-splitting, since each space is treated as a separator between arguments. Quoting the filename keeps it intact as a single argument.
 
 ---
 
 ## Solution
 
-Read the file using quotation marks.
+1. List the available files:
+
+```bash
+ls
+```
+
+```text
+spaces in this filename
+```
+
+2. Read the file using quotation marks:
 
 ```bash
 cat "spaces in this filename"
@@ -48,35 +40,14 @@ The command prints the password for the next level.
 
 ---
 
-## Commands Used
-
-```bash
-ls
-
-cat "spaces in this filename"
-```
-
----
-
-## Why These Commands?
-
-| Command | Purpose |
-|---------|---------|
-| `ls` | Identify available files |
-| `cat` | Read the target file |
-| Quotes | Handle filenames containing spaces |
-
----
-
 ## Skills Learned
 
-- Quoting Filenames
-- Linux File Handling
-- Command-Line Basics
+- Quoting filenames containing whitespace
+- Command-line argument handling
 
 ---
 
-## Tools Used
+## Tools
 
 - Linux Terminal
 

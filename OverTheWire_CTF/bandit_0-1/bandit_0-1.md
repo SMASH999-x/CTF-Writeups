@@ -1,14 +1,8 @@
-# Bandit Level 0 → 1
+# 🐧 Bandit Level 0 → 1
 
 **Platform:** OverTheWire
-
-**Wargame:** Bandit
-
-**Level:** 0 → 1
-
 **Category:** Linux Basics
-
-**Difficulty:** Easy
+**Difficulty:** 🟢 Easy
 
 ---
 
@@ -18,71 +12,49 @@ Connect to the Bandit server and retrieve the password stored inside the `readme
 
 ---
 
-## Initial Enumeration
+## Approach
 
-Connect to the remote machine using SSH.
-
-```bash
-ssh bandit0@bandit.labs.overthewire.org -p 2220
-```
-
-List the files in the current directory.
-
-```bash
-ls
-```
-
-Output:
-
-```text
-readme
-```
+The very first level is about establishing an SSH connection and getting comfortable listing and reading files in a Linux home directory. There's no trick here — just confirm what's in the directory and read it.
 
 ---
 
 ## Solution
 
-Display the contents of the `readme` file.
-
-```bash
-cat readme
-```
-
-The output contains the password for the next Bandit level.
-
----
-
-## Commands Used
+1. Connect to the server over SSH:
 
 ```bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
 
+2. List the files in the current directory:
+
+```bash
 ls
+```
 
+```text
+readme
+```
+
+3. Read the file:
+
+```bash
 cat readme
 ```
 
----
-
-## Why These Commands?
-
-| Command | Purpose |
-|---------|---------|
-| `ssh` | Connect to the remote Bandit server |
-| `ls` | List available files |
-| `cat` | Read the contents of the file |
+The output contains the password for the next level.
 
 ---
 
 ## Skills Learned
 
-- SSH Authentication
-- Linux File Enumeration
-- Reading Files using `cat`
+- SSH authentication
+- Linux file enumeration
+- Reading files with `cat`
 
 ---
 
-## Tools Used
+## Tools
 
 - SSH
 - Linux Terminal
