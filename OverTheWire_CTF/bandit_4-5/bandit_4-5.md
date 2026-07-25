@@ -1,7 +1,9 @@
 # 📄 Bandit Level 4 → 5
 
 **Platform:** OverTheWire
+
 **Category:** Linux File Inspection
+
 **Difficulty:** 🟢 Easy
 
 ---

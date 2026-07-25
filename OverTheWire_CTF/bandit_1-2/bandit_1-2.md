@@ -1,7 +1,9 @@
 # ➖ Bandit Level 1 → 2
 
 **Platform:** OverTheWire
+
 **Category:** Linux File Handling
+
 **Difficulty:** 🟢 Easy
 
 ---

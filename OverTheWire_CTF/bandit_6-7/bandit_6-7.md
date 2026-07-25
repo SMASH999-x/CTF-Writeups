@@ -1,7 +1,9 @@
 # 🌍 Bandit Level 6 → 7
 
 **Platform:** OverTheWire
+
 **Category:** Linux File Enumeration
+
 **Difficulty:** 🟡 Medium
 
 ---

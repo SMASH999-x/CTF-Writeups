@@ -1,7 +1,9 @@
 # 🕵️ Bandit Level 3 → 4
 
 **Platform:** OverTheWire
-**Category:** Linux Enumeration
+
+**Category:** Linux 
+
 **Difficulty:** 🟢 Easy
 
 ---

@@ -1,7 +1,9 @@
 # 🔎 Bandit Level 7 → 8
 
 **Platform:** OverTheWire
+
 **Category:** Linux Text Processing
+
 **Difficulty:** 🟢 Easy
 
 ---

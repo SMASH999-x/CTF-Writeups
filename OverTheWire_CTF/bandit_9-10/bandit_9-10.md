@@ -1,7 +1,9 @@
 # 🧬 Bandit Level 9 → 10
 
 **Platform:** OverTheWire
+
 **Category:** Linux Binary Analysis
+
 **Difficulty:** 🟢 Easy
 
 ---
