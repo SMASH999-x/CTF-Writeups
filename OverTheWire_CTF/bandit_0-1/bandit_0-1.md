@@ -1,7 +1,9 @@
 # 🐧 Bandit Level 0 → 1
 
 **Platform:** OverTheWire
+
 **Category:** Linux Basics
+
 **Difficulty:** 🟢 Easy
 
 ---
