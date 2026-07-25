@@ -1,2 +1,19 @@
-# CTF-Writeups
-My CTF writeups, walkthroughs, and notes from PicoCTF, TryHackMe, and OverTheWire.
+# CTF Writeups
+
+Welcome!
+
+This repository contains my writeups and notes while solving CTF challenges.
+
+## Platforms
+
+- PicoCTF
+- TryHackMe
+- OverTheWire
+- And Others 
+## Categories
+
+- General Skills
+- Linux
+- Web Exploitation 
+
+> These writeups are created for learning and documentation purposes.
