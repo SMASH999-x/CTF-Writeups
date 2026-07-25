@@ -42,6 +42,6 @@ The extracted file contains the flag.
 
 ## Flag
 
-```
-picoCTF{z1p_and_spl1t_f1l3s_4r3_fun_78b76e61}
+```text
+Hidden
 ```

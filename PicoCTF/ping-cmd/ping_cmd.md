@@ -61,5 +61,5 @@ nc mysterious-sea.picoctf.net 53525
 ## Flag
 
 ```text
-picoCTF{...}
+Hidden
 ```

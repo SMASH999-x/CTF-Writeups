@@ -34,6 +34,6 @@ Open the file to obtain the flag.
 
 ## Flag
 
-```
-picoCTF{f1nd_15_f457_ab443fd1}
+```text
+Hidden
 ```

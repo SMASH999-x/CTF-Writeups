@@ -31,6 +31,6 @@ CyberChef can perform all steps.
 
 ## Flag
 
-```
-picoCTF{nested_enc0ding_ffbbbf57}
+```text
+Hidden
 ```

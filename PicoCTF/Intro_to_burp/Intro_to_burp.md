@@ -31,3 +31,9 @@ The response returns the flag.
 ## Tools
 
 - Burp Suite
+
+## Flag
+
+```text
+Hidden
+```

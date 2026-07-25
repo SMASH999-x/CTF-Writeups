@@ -35,3 +35,9 @@ The decoded output contains the flag.
 
 - Browser
 - Linux Terminal
+
+## Flag
+
+```text
+Hidden
+```

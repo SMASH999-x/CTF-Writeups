@@ -39,6 +39,6 @@ Reverse each transformation until the original text is recovered.
 
 ## Flag
 
-```
-picoCTF{Revers1ng_t3xt_Tr4nsf0rm@t10ns_dcc1896c}
+```text
+Hidden
 ```

@@ -36,6 +36,6 @@ echo "encoded_text" | base64 --decode
 
 ## Flag
 
-```
-picoCTF{...}
+```text
+Hidden
 ```
