@@ -1,6 +1,6 @@
-# 🔢 picoCTF — Based
+# 🔢 PicoCTF — Based
 
-**Platform:** picoCTF
+**Platform:** PicoCTF
 
 **Category:** General Skills
 
