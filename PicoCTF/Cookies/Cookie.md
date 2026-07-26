@@ -1,7 +1,9 @@
 # 🍪 Cookie Monster Secret Recipe
 
 **Platform:** PicoCTF
+
 **Category:** Web Exploitation
+
 **Difficulty:** 🟢 Easy
 
 ## Challenge Description

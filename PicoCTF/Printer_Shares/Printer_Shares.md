@@ -1,7 +1,9 @@
 # 🖨️ Printer Shares
 
-**Platform:** PicoCTF
+**Platform:** PicoCTF 
+
 **Category:** General Skills
+
 **Difficulty:** 🟢 Easy
 
 ## Challenge Description

@@ -1,7 +1,9 @@
 # 🗂️ First Find
 
 **Platform:** PicoCTF
+
 **Category:** General Skills
+
 **Difficulty:** 🟢 Easy
 
 ## Challenge Description

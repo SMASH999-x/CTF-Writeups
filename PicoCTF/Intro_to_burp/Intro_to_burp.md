@@ -1,7 +1,9 @@
 # 🕷️ Intro to Burp
 
 **Platform:** PicoCTF
+
 **Category:** Web Exploitation
+
 **Difficulty:** 🟢 Easy
 
 ## Challenge Description

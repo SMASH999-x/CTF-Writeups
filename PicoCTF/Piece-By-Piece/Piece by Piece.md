@@ -1,7 +1,9 @@
 # 🧩 Piece by Piece
 
 **Platform:** PicoCTF
+
 **Category:** General Skills
+
 **Difficulty:** 🟢 Easy
 
 ## Challenge Description

@@ -1,7 +1,9 @@
 # 📖 useless
 
 **Platform:** PicoCTF 2023
+
 **Category:** General Skills
+
 **Difficulty:** 🟡 Medium
 
 ## Challenge Description

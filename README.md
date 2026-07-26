@@ -9,6 +9,7 @@ This repository contains my writeups and notes while solving CTF challenges.
 - PicoCTF
 - TryHackMe
 - OverTheWire
+- HackTheBox
 - And Others 
 ## Categories
 
